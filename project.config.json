@@ -1,0 +1,12 @@
+{
+  "project": {
+    "name": "proj ad tech",
+    "slug": "proj-ad-techj",
+    "description": ""
+  },
+  "s3": {
+    "bucket": "graphics.axios.com",
+    "folder": "2017-07-24-proj-ad-techj"
+  },
+  "files": []
+}
