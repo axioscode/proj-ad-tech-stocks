@@ -16,6 +16,8 @@ class lineChart {
         this.yDomain = opts.yDomain ? opts.yDomain : null;
         this.xDomain = opts.xDomain ? [this.parseTime(opts.xDomain[0]), this.parseTime(opts.xDomain[1])] : null;
 
+        this.onReady = opts.onReady;
+
         this._setData();
 
     }
@@ -113,6 +115,8 @@ class lineChart {
         this.plot = this.svg.append('g')
             .attr('transform', `translate(${this.margin.left},${this.margin.top})`)
             .attr("class", "chart-g");
+
+        this.onReady();
     }
 
 
