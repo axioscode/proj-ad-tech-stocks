@@ -61,7 +61,7 @@ class lineChart {
             top: this.isMobile ? 10 : 15,
             right: this.isMobile ? 10 : 45,
             bottom: this.isMobile ? 20 : 30,
-            left: 30
+            left: this.isMobile ? 34 : 40,
         };
 
         this.width = this.element.offsetWidth - this.margin.left - this.margin.right;

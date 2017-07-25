@@ -23,13 +23,12 @@ document.addEventListener("DOMContentLoaded", main());
 
 
 function main() {
-    var pymChild = new pym.Child();
 
     let yume = new linechart({
         element: document.querySelector(`.chart-div.yume .chart`),
         dataUrl: "data/YUME.csv",
         yDomain: [-1.05, .5],
-        xDomain : ["6/1/2013", "7/24/2017"],
+        xDomain : ["7/1/2013", "7/24/2017"],
         name: "YUME"
     });
 
@@ -37,7 +36,7 @@ function main() {
         element: document.querySelector(`.chart-div.rubi .chart`),
         dataUrl: "data/RUBI.csv",
         yDomain: [-1.05, .5],
-        xDomain : ["6/1/2013", "7/24/2017"],
+        xDomain : ["7/1/2013", "7/24/2017"],
         name: "RUBI"
     });
 
@@ -45,7 +44,7 @@ function main() {
         element: document.querySelector(`.chart-div.szmk .chart`),
         dataUrl: "data/SZMK.csv",
         yDomain: [-1.05, .5],
-        xDomain : ["6/1/2013", "7/24/2017"],
+        xDomain : ["7/1/2013", "7/24/2017"],
         name: "SZMK"
     });
 
@@ -53,7 +52,7 @@ function main() {
         element: document.querySelector(`.chart-div.fuel .chart`),
         dataUrl: "data/FUEL.csv",
         yDomain: [-1.05, .5],
-        xDomain : ["6/1/2013", "7/24/2017"],
+        xDomain : ["7/1/2013", "7/24/2017"],
         name: "FUEL"
     });
 
@@ -64,5 +63,7 @@ function main() {
     	szmk.update();
     	fuel.update();
     });
+
+    var pymChild = new pym.Child();
 
 }
